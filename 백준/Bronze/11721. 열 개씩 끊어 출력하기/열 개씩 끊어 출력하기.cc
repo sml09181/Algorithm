@@ -6,13 +6,12 @@ int main(int argc, const char *argv[]) {
     cin.tie(NULL);
     
     string s;
-    getline(cin, s);
-    int i = 0;
-    while (s.length() >= 10) {
-        cout << s.substr(0, 10) << '\n';
-        s = s.substr(10, s.length());
+    cin >> s;
+    for (int i=0; i<s.size(); i++) {
+        
+        cout << s[i];
+        if (i % 10 == 9) cout << '\n';
     }
-    cout << s;
 
     return 0;
 }
