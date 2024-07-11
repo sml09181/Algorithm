@@ -10,7 +10,7 @@ int main(int argc, const char* argv[]) {
         cin >> a >> b >> c;
         if (a==0&&b==0&&c==0) break;
         if (2*b==a+c) cout << "AP " << 2*c-b << '\n';
-        else cout << "GP " << double(c*c)/double(b) << '\n';
+        else cout << "GP " << double(c*c)/b << '\n';
     }
     return 0;
 }
